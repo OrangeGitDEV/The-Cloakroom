@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text color */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.header {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center the logo */
+  align-items: center; /* Center items vertically */
+  background-color: #181818; /* Darker header */
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+  width: 100%; /* Make the logo responsive */
+  max-width: 100px; /* Maximum width for the logo adjusted to 100px */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.container {
+  padding: 30px;
+  margin: 20px; /* Margin around container */
+  background-color: #181818; /* Darker container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  color: #1db954; /* Spotify green */
+  margin-bottom: 10px; /* Adjusted margin */
+}
+
+.tagline {
+  text-align: center; /* Center the tagline */
+  color: #ffffff; /* White text */
+  margin-bottom: 20px; /* Space below the tagline */
+}
+
+h2 {
+  color: #ffffff; /* White headings */
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.6;
+  color: #b3b3b3; /* Light gray text */
+}
+
+ul {
+  list-style: none; /* No bullets */
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  position: relative; /* For custom bullet */
+}
+
+li::before {
+  content: '•'; /* Custom bullet */
+  color: #1db954; /* Spotify green */
+  position: absolute;
+  left: -20px; /* Adjust left position */
+}
+
+.button {
+  display: block;
+  width: 150px;
+  margin: 20px auto;
+  padding: 12px;
+  background-color: #1db954; /* Spotify green */
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1aa34a; /* Darker green on hover */
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #282828; /* Dark footer */
+  color: #b3b3b3; /* Light gray footer text */
+  margin-top: 20px;
+  border-radius: 0 0 8px 8px; /* Rounded corners for footer */
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">
+    <img src="logoNoBG.png" alt="Logo"> <!-- Replace with your logo image -->
+  </div>
+</div>
+
+<div class="container">
+  <h1>Welcome to The Cloakroom</h1>
+  <div class="tagline">Your Anonymous Marketplace</div> <!-- Centered tagline -->
+  
+  <h2>Why Choose The Cloakroom?</h2>
+  <ul>
+    <li>Anonymity Guaranteed - We prioritize your privacy.</li>
+    <li>Middlemen for Your Safety - Trusted middlemen facilitate transactions.</li>
+  </ul>
+
+  <h2>How It Works</h2>
+  <ul>
+    <li>Create an Account</li>
+    <li>List Your Items</li>
+    <li>Secure Transactions</li>
+    <li>Receive Payment</li>
+  </ul>
+
+  <h2>Get Started Today!</h2>
+  <p>Join Our Community and start trading anonymously.</p>
+  <a href="#" class="button">Create Account</a>
+  <a href="#" class="button">Sign into Your Account</a>
+</div>
+
+<footer>
+  <p>&copy; 2023 The Cloakroom. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
